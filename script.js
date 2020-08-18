@@ -40,8 +40,10 @@ const Peer = window.Peer;
   await localVideo.play().catch(console.error);
 
   // eslint-disable-next-line require-atomic-updates
+  const key='ac2080ac-eaf9-4117-ab8b-e220ae971c4c';
   const peer = (window.peer = new Peer({
-    key: window.__SKYWAY_KEY__,
+   // key: window.__SKYWAY_KEY__,
+    key:key,
     debug: 3,
   }));
 

@@ -75,7 +75,7 @@ video {
   /* グリッドコンテナ */
   display: grid;
   /* 最小100px、最大1frの列を繰り返しつくる */
- grid-template-columns: 270px 270px 270px;  
+ grid-template-columns: 260px 260px 260px;  
   column-gap: 10px;
   row-gap: 10px;
 }

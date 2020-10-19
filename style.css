@@ -65,8 +65,22 @@ video {
   margin: 0 8px;
 }
 
+/*
 .room .remote-streams {
   background-color: #f6fbff;
+}
+*/
+
+.room .remote-streams {
+  /* グリッドコンテナ */
+  display: grid;
+  /* 最小100px、最大1frの列を繰り返しつくる */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  );
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .room .messages {

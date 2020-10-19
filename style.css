@@ -67,7 +67,7 @@ video {
 
 .room .remote-streams {
   background-color: #f6fbff;
-  
+  float:left;
 }
 
 .room .messages {

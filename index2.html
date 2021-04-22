@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkyWay-談話室</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">新談話室</h1>
+      <p align='center'>10人まで一画面の中に収まるようにしました（2020-10-29 rev)</p>
+      <!--
+      <p class="note">
+        Change Room mode (before join in a room):
+        <a href="#">mesh</a> / <a href="#sfu">sfu</a>
+      </p>
+    -->
+      <div class="room">
+        <div>
+          <video id="js-local-stream" width=300px></video>
+          <span id="js-room-mode"></span>:
+          <input type="text" placeholder="ルーム名をインプット" id="js-room-id" size=10>
+          <button id="js-join-trigger">参加</button>
+          <button id="js-leave-trigger">退出</button>
+        </div>
+
+        <div class="remote-streams" id="js-remote-streams" style="width:300px;"></div>
+
+        <div>
+          <pre class="messages" id="js-messages"></pre>
+          <input type="text" id="js-local-text">
+          <button id="js-send-trigger">メッセージ送信</button>
+        </div>
+      </div>
+      <p class="meta" id="js-meta"></p>
+    </div>
+   
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="./key.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

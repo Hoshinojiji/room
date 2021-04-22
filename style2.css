@@ -60,7 +60,7 @@ video {
 /* room */
 .room {
   display: grid;
-  grid-template-columns: 20% 75% 5%;
+  grid-template-columns: 20% 70% 10%;
   gap: 8px;
   margin: 0 8px;
 }
@@ -75,7 +75,7 @@ video {
   /* グリッドコンテナ */
   display: grid;
   /* 最小100px、最大1frの列を繰り返しつくる */
- grid-template-columns: 260px 260px 260px;  
+ grid-template-columns: 400px 400px;  
   column-gap: 10px;
   row-gap: 10px;
 }

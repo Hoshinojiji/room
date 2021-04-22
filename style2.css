@@ -86,3 +86,7 @@ video {
   padding: 8px;
   margin-top: 0;
 }
+
+a {
+  text-align: center;
+}

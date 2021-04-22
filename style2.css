@@ -60,7 +60,7 @@ video {
 /* room */
 .room {
   display: grid;
-  grid-template-columns: 20% ８0%　０％;
+  grid-template-columns: 20% ８0% 0%;
   gap: 8px;
   margin: 0 8px;
 }
